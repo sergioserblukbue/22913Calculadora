@@ -1,5 +1,6 @@
 import os
 #  creo las funciones para las operaciones
+
 def sumar(n1,n2):
     return n1 + n2
 def restar(n1, n2):
@@ -35,7 +36,7 @@ def main():
         elif op=="/":
             print("el resultado de la división es: ", dividir(pn, sn))
         elif op=="*":
-            print ("")
+            print ("El resultado de multiplicar es:", multiplicar(pn,sn))
         else:
             print("opcion no valida")
         op=input("ingrese una operación ")
