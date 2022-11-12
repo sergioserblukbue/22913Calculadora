@@ -1,5 +1,5 @@
 import os
-import statistics
+import statistics 
 from operaciones import *
 
 # funcion para el menu normal y cientifica
@@ -20,6 +20,15 @@ def menu_estadistica():
     print("5 para desviacion estandar")
     print("6 para cargar datos")
     print("7 para salir")
+#funcion para menu de calc cientifica
+def menu_cientifica():
+    os.system("cls")
+    print("1 para potencia")
+    print("2 para Raiz 2")
+    print("3 para seno")
+    print("4 para coseno")
+    print("5 para tangente")
+    print("6 para Salir")
 #funcion para la carga de datos a una lista de datos estadisticos
 def cargar_datos(datos):
     while True:
@@ -99,9 +108,17 @@ def main():
                 op=input("ingrese una operación ")
         elif tc=="c":
             print("cientifica")
+            menu_cientifica()
+            op=input("seleccione la operacion: ")
+            if op=="1":
+                print("la potencia da: ", potencia())
+                input("ingrese enter para continuar")
+            
+
         elif tc=="s":
             print("saliendo")
             break
 
 # aca empieza el programa
+
 main()
